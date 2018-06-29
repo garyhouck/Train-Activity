@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id = "container">
+    
+    <header>
+        <h1>Train Schedule</h1>
+    </header>
+
+    <h2>Current Schedule</h2>
+
+    <table id="trainSchedule">
+        <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (min)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+        </tr>
+        <tr id "new">
+            <th id="newInput1"></th>
+            <th id="newInput2"></th>
+            <th id="newInput3"></th>
+            <th id="newInput4"></th>
+            <th id="newInput5"></th>
+        </tr>
+    </table>
+
+    
+
+    <form>
+            <h2 id ="formHeading">Add a Train</h2>
+        <label>Train Name:</label><br>
+        <input type="text" class="input" id="trainInput"><br>
+        <label>Destination:</label><br>
+        <input type="text" class="input" id="destinationInput"><br>
+        <label>Frequency:</label><br>
+        <input type="number" class="input" id="frequencyInput"><br>
+        <label>First Train Time:</label><br>
+        <input type="time" class="input" id="firstTrain"><br>
+        <input type="submit" value="SUBMIT"  id="submit">
+    </form>
+
+    </div>
+</body>
+</html>
