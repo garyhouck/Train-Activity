@@ -53,11 +53,11 @@ let config = {
     });
 
       database.ref().on("child_added", function(snapshot) {
-        $("#newInput1").append(snapshot.val().train);
-        $("#newInput2").append(snapshot.val().destination);
-        $("#newInput3").append(snapshot.val().frequency);
-        $("#newInput4").append(snapshot.val().arrival);
-        $("#newInput5").append(snapshot.val().minutes);
+        $("#newInput1").append("<div>" + snapshot.val().train + "</div>");
+        $("#newInput2").append("<div>" + snapshot.val().destination + "</div>");
+        $("#newInput3").append("<div>" + snapshot.val().frequency + "</div>");
+        $("#newInput4").append("<div>" + snapshot.val().arrival + "</div>");
+        $("#newInput5").append("<div>" + snapshot.val().minutes + "</div>");
         console.log(minutesAway);
     }, function(errorObject) {
         console.log("Errors handled: " + errorObject.code);
