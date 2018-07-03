@@ -54,3 +54,8 @@ h2 {
 #formHeading {
     text-align: center;
 }
+#github {
+	margin-top: 10px;
+	margin-left: 10px;
+	/* float: left; */
+}
